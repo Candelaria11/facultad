@@ -1,5 +1,5 @@
 #EJERCICIO 1
-"""
+
 def calular_area_triangulo(dato1,dato2)-> float:
     '''
     Funcion que reciba la base y altura de un triangulo,
@@ -13,9 +13,9 @@ base = float(input("ingrese la base del rectangulo: "))
 altura = float(input("ingrese la altura del resctangulo: "))  
 resultado = calular_area_triangulo(base, altura)
 print("el area es de: " , resultado)
-"""
+
 #EJERCICIO 2
-"""
+
 def calcula_area_circulo(dato)-> float:
  '''
  La funcion recibe el radio de un circulo como parametro y devuelve el area del mismo
@@ -30,10 +30,10 @@ def calcula_area_circulo(dato)-> float:
 
 radio = float(input("ingrese el radio del circulo: "))
 calcula_area_circulo(radio)
-"""
+
 
 #EJERCICIO 3
-"""
+
 def verificar_par_impar (num):
     '''
     La funcion verifica si un numero es par o impar
@@ -45,10 +45,10 @@ def verificar_par_impar (num):
         print("el numero no es par")    
 
 verificar_par_impar(2)    
-"""
+
 
 #EJERCICIO 4
-"""
+
 def verificar_par_bool (num):
     '''
     La funcion recibe por parametro un numero, devuelva True si es par y devuelve False si no es par
@@ -63,9 +63,9 @@ if verificar_par_bool == True:
     print("es par")
 else:
     print("es impar")    
-"""
+
 #EJERCICIO 5
-"""
+
 def hallar_maximo(uno:int,dos:int, tres:int) -> int:
     '''
     La funcion recibe 3 enteros
@@ -85,9 +85,9 @@ numero1= int(input("ingrese el primer numero: "))
 numero2= int(input("ingrese el segundo numero: "))    
 numero3= int(input("ingrese el tercer numero: "))
 hallar_maximo(numero1,numero2,numero3)
-"""
+
 #EJERCICIO 6 
-"""
+
 def calcular_portencia (uno,dos) -> int:
     '''
     La funcion recibe la base y el exponente como argumentos y devuelve como resultado la potencia
@@ -101,9 +101,9 @@ def calcular_portencia (uno,dos) -> int:
 base = int(input("ingrese la base: "))
 exponente = int(input("ingrese el exponente: "))
 calcular_portencia(base,exponente)
-"""
+
 #EJERCICI0 7
-"""
+
 def retornar_primo(num)->bool:
     '''
     La funcion recibe un numero, retorna True si el numero es primo e imprime un mensaje aclarando,
@@ -122,12 +122,10 @@ def retornar_primo(num)->bool:
         
 numero = int(input("ingrese un numero: "))
 retornar_primo(numero )
-"""
+
 
 
 #EJERCICIO 8 
-"""
-'''
 def retornar_primo(num, inicio = 1)->int:
  '''
  La funcion retona la cantidad de numero encontrados entre la unidad
@@ -149,8 +147,8 @@ def retornar_primo(num, inicio = 1)->int:
 numero = int(input("ingrese un numero: "))
 cantidad = retornar_primo(numero)
 print(cantidad)
-'''
-"""
+
+
 #EJERCICI0 9
 def imprimir_tabla(num:int, uno=1, dos=10):
     '''
@@ -165,16 +163,22 @@ numero = int(input("ingrese un numero: "))
 imprimir_tabla(numero)
 
 #EJERCICIO 1O
-"""
+
 def pedir_retornar_num()->int:
+    '''
+    La funcion recibe y retorna un numero entero
+    '''
     numero = (input("ingrese un numero: "))
     return numero
 
 pedir_retornar_num()
-"""
-"""
+
+
 #EJERCICIO 11
 def pedir_float_retornar()-> float:
+    '''
+    La funcion recibe y retorna un numero float
+    '''
     numero = float(input("ingrese un numero: "))
     return numero
 
@@ -183,8 +187,11 @@ pedir_float_retornar()
 
 #EJERCICIO 12
 def pedir_cadena_retornar()-> str:
+    '''
+    La funcion recibe y retorna un string
+    '''
     cadena = str(input("ingrese una cadena: "))
     return cadena
 
 pedir_cadena_retornar()
-"""
+
