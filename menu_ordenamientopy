@@ -1,0 +1,42 @@
+def mostrar_menu():
+ print("MENU DE OPCIONES")
+ print("1. lista de los datos de usuarios de Mexico ordenados por nombre")
+ print("2. lista de usuariosn mas jovenes por edad de manera ascendente")
+ print("3. lista de usuarios de mexico y brasil cuyo CP es mayor a 8000")
+
+
+mostrar_menu()
+opcion = int(input("Ingrese el numero segun lo que desea saber: "))
+while opcion > 3 or opcion < 1:
+ opcion = int(input("ERROR, no es valido ese numero: "))
+
+from biblioteca_ordenamiento import *
+from listas_personas import *
+
+if opcion == 1:
+ 
+ listar_usuarios_mexico(country, edades, postalZip, address, nombres, mails, telefonos , region)
+ acomodar_mexico_descendinte(lista_mexico, datos_mexico)
+ imprimir_datos_mexico(datos_mexico)
+if opcion == 2:
+
+ joven = buscar_edad_joven(edades)
+ guardar_datos_usuario_menor(edades, nombres,telefonos,mails, postalZip,address,region, country, joven )
+ comparar_nombres(nombre_jovenes, menores)
+ mostrar_resulatdo(menores)
+if opcion == 3:
+
+ buscar_mexico_brasil_cp8000(country, postalZip, nombres, edades, address, telefonos, mails, region)
+ ordenar_nombre_edad_descendente(datos_usuarios, nombre_usuario, edad_usuario)
+ mostrar_usuarios(datos_usuarios)
+
+
+
+
+
+
+
+
+
+
+  
